@@ -12,8 +12,8 @@ Version: 1.0.0
 Author URI: http://github.com/hktom
 */
 
-include("public/mapBoxGL.php");
-include("public/listPost.php");
+include plugin_dir_path( __FILE__ ) . 'public/mapboxGL.php';
+include plugin_dir_path( __FILE__ ) . 'public/listPost.php';
 //add_action("admin_menu", "addMenu");
 
 
