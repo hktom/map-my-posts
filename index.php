@@ -24,5 +24,10 @@ include plugin_dir_path( __FILE__ ) . 'public/listPost.php';
 function render(){
     listPost();
     mapBox();
-}   
-add_shortcode("listing-post-map", "render");
+}
+
+function register_shortcode(){
+    add_shortcode("listing-post-map", "render");
+}
+
+add_action("init", "register_shortcode");
